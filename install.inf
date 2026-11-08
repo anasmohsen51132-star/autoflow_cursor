@@ -1,0 +1,74 @@
+;==============================================================
+; Autoflow cursor scheme
+; Install: right-click this file -> Install, then open
+; Settings -> Mouse -> Additional mouse options -> Pointers
+; and pick the "Autoflow" scheme (it is applied automatically).
+;==============================================================
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg, Wreg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%working%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%crosshair%,%10%\%CUR_DIR%\%ibeam%,%10%\%CUR_DIR%\%pen%,%10%\%CUR_DIR%\%blocked%,%10%\%CUR_DIR%\%resize_ns%,%10%\%CUR_DIR%\%resize_ew%,%10%\%CUR_DIR%\%resize_nwse%,%10%\%CUR_DIR%\%resize_nesw%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%up_arrow%,%10%\%CUR_DIR%\%hand%"
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors","Arrow",0x00020000,"%10%\%CUR_DIR%\%pointer%"
+HKCU,"Control Panel\Cursors","Help",0x00020000,"%10%\%CUR_DIR%\%help%"
+HKCU,"Control Panel\Cursors","AppStarting",0x00020000,"%10%\%CUR_DIR%\%working%"
+HKCU,"Control Panel\Cursors","Wait",0x00020000,"%10%\%CUR_DIR%\%busy%"
+HKCU,"Control Panel\Cursors","Crosshair",0x00020000,"%10%\%CUR_DIR%\%crosshair%"
+HKCU,"Control Panel\Cursors","IBeam",0x00020000,"%10%\%CUR_DIR%\%ibeam%"
+HKCU,"Control Panel\Cursors","NWPen",0x00020000,"%10%\%CUR_DIR%\%pen%"
+HKCU,"Control Panel\Cursors","No",0x00020000,"%10%\%CUR_DIR%\%blocked%"
+HKCU,"Control Panel\Cursors","SizeNS",0x00020000,"%10%\%CUR_DIR%\%resize_ns%"
+HKCU,"Control Panel\Cursors","SizeWE",0x00020000,"%10%\%CUR_DIR%\%resize_ew%"
+HKCU,"Control Panel\Cursors","SizeNWSE",0x00020000,"%10%\%CUR_DIR%\%resize_nwse%"
+HKCU,"Control Panel\Cursors","SizeNESW",0x00020000,"%10%\%CUR_DIR%\%resize_nesw%"
+HKCU,"Control Panel\Cursors","SizeAll",0x00020000,"%10%\%CUR_DIR%\%move%"
+HKCU,"Control Panel\Cursors","UpArrow",0x00020000,"%10%\%CUR_DIR%\%up_arrow%"
+HKCU,"Control Panel\Cursors","Hand",0x00020000,"%10%\%CUR_DIR%\%hand%"
+HKCU,"Control Panel\Cursors","Scheme Source",0x00010001,1
+
+[Scheme.Cur]
+%pointer%
+%help%
+%working%
+%busy%
+%crosshair%
+%ibeam%
+%pen%
+%blocked%
+%resize_ns%
+%resize_ew%
+%resize_nwse%
+%resize_nesw%
+%move%
+%up_arrow%
+%hand%
+
+[Strings]
+CUR_DIR     = "Cursors\Autoflow"
+SCHEME_NAME = "Autoflow"
+pointer = "autoflow-pointer.cur"
+help = "autoflow-help.cur"
+working = "autoflow-working.ani"
+busy = "autoflow-busy.ani"
+crosshair = "autoflow-crosshair.cur"
+ibeam = "autoflow-ibeam.cur"
+pen = "autoflow-pen.cur"
+blocked = "autoflow-blocked.cur"
+resize_ns = "autoflow-resize-ns.cur"
+resize_ew = "autoflow-resize-ew.cur"
+resize_nwse = "autoflow-resize-nwse.cur"
+resize_nesw = "autoflow-resize-nesw.cur"
+move = "autoflow-move.cur"
+up_arrow = "autoflow-up-arrow.cur"
+hand = "autoflow-hand.cur"
